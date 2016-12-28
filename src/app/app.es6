@@ -5,6 +5,11 @@ let data = {
     width: 140,
     height: 140
 }
+setInterval(function () {
+    var dist = Math.floor(Math.random() * 100)
+    data.score = dist
+    console.log(dist)
+}, 2000)
 import React from 'react'
 import ReactDOM from 'react-dom'
 
