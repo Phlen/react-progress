@@ -1,4 +1,4 @@
-console.log('app.es6')
+import '../sass/app.scss'
 let data = {
     label: 'XXX',
     score: 60,

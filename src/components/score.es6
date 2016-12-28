@@ -181,7 +181,7 @@ let Score = React.createClass({
     render: function () {
         console.log(this.state.data)
         return (
-            <canvas className="score" ref="myCanvas">
+            <canvas className="score" width={this.state.data.width} height={this.state.data.height} ref="myCanvas">
             </canvas>
         )
     }
