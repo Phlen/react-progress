@@ -29,9 +29,7 @@ let Score = React.createClass({
     },
 
     componentDidMount: function () {
-        // console.log(this.refs.myCanvas.getContext('2d'))
         context = this.refs.myCanvas.getContext('2d')
-        this.animate()
     },
 
     // 画图动作
@@ -179,7 +177,7 @@ let Score = React.createClass({
     },
 
     render: function () {
-        console.log(this.state.data)
+        this.animate()
         return (
             <canvas className="score" width={this.state.data.width} height={this.state.data.height} ref="myCanvas">
             </canvas>
